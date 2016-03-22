@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Responsive Grid</title>
-	
-	<!-- CSS styling -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
-	
-	<!-- Link to jQuery, Bootstrap and Google Maps API -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="js/jquery-2.1.1.js"></script>
-	<script src="js/script.js"></script>	
+  <meta charset="UTF-8">
+  <title>Responsive Site Clone | Vox Blog</title>
+  
+  <!-- CSS styling -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
+
 <body>
-	<section class="grid">
-	    <div class="row">
-	    	<div class="four-col">
-	        <p>Four columns.</p>
-	      </div>
-	      <div class="four-col">
-	        <p>Four columns.</p>
-	      </div>
-	      <div class="five-col">
-	        <p>Five columns.</p>
-	      </div>
-	      <div class="three-col">
-	        <p>Three columns.</p>
-	      </div>
-	    </div>
-	    <div class="row">
-	        <div class="eleven-col">
-	            <p>Eleven columns.</p>
-	        </div>
-	        <div class="one-col">
-	            <p>One column.</p>
-	        </div>
-	    </div>
-	</section>
+  <header class="top-bar">
+    <nav class="main-nav">
+      <h1 class="logo">
+      </h1>
+      <ul class="right">
+        <li>Share card stack</li>
+      </ul>
+    </nav>
+  </header>
+  <section class="grid main-background">
+    <div class="row">
+      <aside class="col-4 side-container">
+        <header class="side-header">
+          <h1>Blog Article Title</h1>
+          <details open>
+            <summary>
+              By <a class="author" href="#">Author Name</a>
+            </summary>
+            <time pubdate>31 March, 2016</time>
+          </details>
+        </header>
+        <nav class="side-nav">
+          <div class="side-nav-control up"></div>
+          <ol>
+            <li class="selected">Subject matter item 1</li>
+            <li>Subject matter item 2</li>
+            <li>Subject matter item 3</li>
+          </ol>
+          <div class="side-nav-control down"></div>
+        </nav>
+      </aside>
+      <article class="col-7 offset-1 content-container">
+        <header class="content-header">
+          <h1>Card 1 of 9</h1>
+        </header>
+        <div class="content-body">
+          <h1>Blog Article Title</h1>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati blanditiis, dignissimos excepturi rem eius illum rerum perspiciatis quis quae. Quaerat mollitia quae vero magni, in consequatur quis nulla quia. Adipisci.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quod cupiditate nihil facere beatae aliquid voluptatem commodi necessitatibus, adipisci vel eum vero quos quia ut nostrum aliquam velit at explicabo!</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fuga quos, ducimus neque sed hic magni quisquam, ipsa doloremque aspernatur delectus dolores dicta sunt tempora ullam. Dolorum doloremque, blanditiis tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta odio sint alias nemo saepe, qui distinctio, voluptatibus expedita iusto error possimus omnis atque aut eligendi nobis dolorem libero quas doloribus!</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo facere voluptatum doloribus, repellat facilis id esse optio vero atque omnis, harum impedit. Sequi doloribus minima nisi, nam magni similique at.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea atque magnam officia delectus debitis harum nostrum necessitatibus animi tempore fugiat, consequuntur quam commodi inventore odit quia quae suscipit sed ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis id, aspernatur! Dicta modi nam nesciunt neque dignissimos sunt. Veniam minus, possimus exercitationem corporis debitis ab numquam eveniet vero facere tenetur.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quos recusandae saepe. Voluptate maiores error quaerat, modi eligendi sit quidem eaque iusto, ducimus, consequatur nobis eos nemo? Enim, corporis, beatae.</p>
+
+        </div>
+        <footer class="content-footer">
+          <p>Share this card</p>
+        </footer>
+      </article>
+    </div>
+  </section>
+</body>
+
+<!-- jQuery and custom JavaScript -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/script.js"></script>  
 </body>
 </html>
+
